@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MapAddressView">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aoj-Ja-MhY">
+                    <rect key="frame" x="8" y="6" width="169" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="169" id="h5i-Gl-ykB"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="nyg-Mj-3Mc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5S-Rv-6kB">
+                    <rect key="frame" x="185" y="0.0" width="65" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="导航" image="navigation_ico.png"/>
+                    <connections>
+                        <action selector="navClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Oa0-LU-Qw3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbT-EI-zEW">
+                    <rect key="frame" x="8" y="25" width="169" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="169" id="Ja3-O4-hnR"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="15" id="vep-4L-Pg3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WbT-EI-zEW" firstAttribute="top" secondItem="Aoj-Ja-MhY" secondAttribute="bottom" constant="1" id="8PB-sH-QCT"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WbT-EI-zEW" secondAttribute="bottom" constant="13" id="AP2-k1-eaq"/>
+                <constraint firstItem="G5S-Rv-6kB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BRG-5i-5tq"/>
+                <constraint firstItem="Aoj-Ja-MhY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="Fai-cF-Yue"/>
+                <constraint firstItem="G5S-Rv-6kB" firstAttribute="leading" secondItem="WbT-EI-zEW" secondAttribute="trailing" constant="8" id="TjS-ak-zUj"/>
+                <constraint firstItem="G5S-Rv-6kB" firstAttribute="leading" secondItem="Aoj-Ja-MhY" secondAttribute="trailing" constant="8" id="WlF-bw-x8f"/>
+                <constraint firstItem="G5S-Rv-6kB" firstAttribute="leading" secondItem="WbT-EI-zEW" secondAttribute="trailing" constant="8" id="WrD-Tw-4mP"/>
+                <constraint firstAttribute="bottom" secondItem="G5S-Rv-6kB" secondAttribute="bottom" constant="13" id="gjh-Dw-Ddk"/>
+                <constraint firstItem="WbT-EI-zEW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="m2O-Ua-clZ"/>
+                <constraint firstItem="WbT-EI-zEW" firstAttribute="top" secondItem="Aoj-Ja-MhY" secondAttribute="bottom" constant="1" id="n4c-Rw-N0u"/>
+                <constraint firstItem="Aoj-Ja-MhY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="tcZ-yN-Bdh"/>
+                <constraint firstAttribute="trailing" secondItem="G5S-Rv-6kB" secondAttribute="trailing" id="yNM-GN-wpu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressLabel" destination="WbT-EI-zEW" id="T32-18-pOa"/>
+                <outlet property="btn" destination="G5S-Rv-6kB" id="KSl-DP-Cq9"/>
+                <outlet property="storeLabel" destination="Aoj-Ja-MhY" id="bSO-PS-pK5"/>
+            </connections>
+            <point key="canvasLocation" x="264" y="188"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navigation_ico.png" width="17" height="22"/>
+    </resources>
+</document>

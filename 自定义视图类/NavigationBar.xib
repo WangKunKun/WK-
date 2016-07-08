@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavigationBar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账户金库" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Cv-cz-Nz8">
+                    <rect key="frame" x="124" y="11" width="72" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="CfO-8j-jBo"/>
+                        <constraint firstAttribute="height" constant="22" id="zZT-0t-nEz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffers_btn_return.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Fa-SW-AkV">
+                    <rect key="frame" x="10" y="14.5" width="9" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="9" id="Yrg-da-xEe"/>
+                        <constraint firstAttribute="height" constant="15" id="hQN-sH-eTf"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEX-BZ-gm8">
+                    <rect key="frame" x="0.0" y="0.0" width="45" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="UUT-Oi-jYu"/>
+                        <constraint firstAttribute="height" constant="44" id="XRR-rK-H5Q"/>
+                    </constraints>
+                    <connections>
+                        <action selector="leftBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="MY4-A1-Evf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2U-U6-jBh">
+                    <rect key="frame" x="247" y="0.0" width="65" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="HVJ-Vh-iHk"/>
+                        <constraint firstAttribute="height" constant="44" id="alV-b6-cFF"/>
+                    </constraints>
+                    <state key="normal" title="结算规则">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="rightBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="XLT-Uh-rZa"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gray_ horizontal_split.png" translatesAutoresizingMaskIntoConstraints="NO" id="wH8-qp-khO">
+                    <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="sY6-t9-L44"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wH8-qp-khO" secondAttribute="trailing" id="0y4-TN-wCA"/>
+                <constraint firstAttribute="bottom" secondItem="wH8-qp-khO" secondAttribute="bottom" id="3D9-xb-cdR"/>
+                <constraint firstItem="D2U-U6-jBh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="72R-Nf-V2U"/>
+                <constraint firstAttribute="bottom" secondItem="AEX-BZ-gm8" secondAttribute="bottom" id="83R-wF-xpa"/>
+                <constraint firstAttribute="trailing" secondItem="D2U-U6-jBh" secondAttribute="trailing" constant="8" id="A3m-hx-ilV"/>
+                <constraint firstItem="AEX-BZ-gm8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OiL-EW-BVg"/>
+                <constraint firstAttribute="bottom" secondItem="7Fa-SW-AkV" secondAttribute="bottom" constant="14.5" id="VMJ-lR-bxL"/>
+                <constraint firstAttribute="bottom" secondItem="D2U-U6-jBh" secondAttribute="bottom" id="WMA-gt-xO8"/>
+                <constraint firstItem="wH8-qp-khO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WhU-qr-tHV"/>
+                <constraint firstItem="7Fa-SW-AkV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14.5" id="as2-a9-sUg"/>
+                <constraint firstItem="1Cv-cz-Nz8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bx8-b7-9tB"/>
+                <constraint firstItem="1Cv-cz-Nz8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dLN-RX-BNI"/>
+                <constraint firstItem="7Fa-SW-AkV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="hO2-vA-rJI"/>
+                <constraint firstItem="AEX-BZ-gm8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qiJ-i2-YDE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowIV" destination="7Fa-SW-AkV" id="Cm6-E4-eeY"/>
+                <outlet property="rightBtn" destination="D2U-U6-jBh" id="1QH-ma-95i"/>
+                <outlet property="separateLine" destination="wH8-qp-khO" id="fDc-dJ-OnQ"/>
+                <outlet property="titleLabel" destination="1Cv-cz-Nz8" id="9i6-zB-V7y"/>
+            </connections>
+            <point key="canvasLocation" x="277" y="271"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="coffers_btn_return.png" width="10" height="18"/>
+        <image name="gray_ horizontal_split.png" width="640" height="2"/>
+    </resources>
+</document>

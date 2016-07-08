@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WKAddTipsView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWM-Vd-Zn1">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="0.34326508620689655" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egk-IN-aJp">
+                    <rect key="frame" x="0.0" y="383" width="320" height="185"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="增加小费" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eC-Ev-4Mc">
+                            <rect key="frame" x="0.0" y="10" width="320" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="uk2-Pt-E1M"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.11372549019607843" green="0.44705882352941173" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="room_bg_text_tip.png" translatesAutoresizingMaskIntoConstraints="NO" id="qI4-1G-D9J">
+                            <rect key="frame" x="60" y="40" width="200" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="VgU-za-Kv6"/>
+                                <constraint firstAttribute="width" constant="200" id="cbN-Ht-e0z"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fJz-X7-VN5">
+                            <rect key="frame" x="65" y="40" width="190" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="190" id="2Y6-uA-2RF"/>
+                                <constraint firstAttribute="height" constant="35" id="32t-PM-PWx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nc0-Gz-Vve">
+                            <rect key="frame" x="60" y="85" width="43" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="42.5" id="5g4-wh-RSD"/>
+                                <constraint firstAttribute="height" constant="35" id="Czg-OU-I2g"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="5元" backgroundImage="room_btn_tip_ash.png">
+                                <color key="titleColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" title="5元" backgroundImage="room_btn_tip.png">
+                                <color key="titleColor" red="0.11372549019607843" green="0.44705882352941173" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="moneyBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ixx-LL-NPT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="51" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQK-kr-rU2">
+                            <rect key="frame" x="113" y="85" width="42" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="0Qo-5u-6TM"/>
+                                <constraint firstAttribute="width" constant="42.5" id="HaD-6K-nDw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="10元" backgroundImage="room_btn_tip_ash.png">
+                                <color key="titleColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" title="10元" backgroundImage="room_btn_tip.png">
+                                <color key="titleColor" red="0.1137254902" green="0.44705882349999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="moneyBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="12a-dN-y3S"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="52" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2l-6f-KNL">
+                            <rect key="frame" x="165" y="85" width="43" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="42.5" id="Qaz-pt-qpV"/>
+                                <constraint firstAttribute="height" constant="35" id="Ygh-3d-fFv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="15元" backgroundImage="room_btn_tip_ash.png">
+                                <color key="titleColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" title="15元" backgroundImage="room_btn_tip.png">
+                                <color key="titleColor" red="0.1137254902" green="0.44705882349999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="moneyBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="lHO-9u-OBK"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="元" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZO-NI-GOM">
+                            <rect key="frame" x="237" y="40" width="13" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="30" id="xr9-0h-yIK"/>
+                                <constraint firstAttribute="height" constant="35" id="zwx-ua-0cE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.67843137254901964" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Joe-PD-VKe">
+                            <rect key="frame" x="0.0" y="145" width="320" height="40"/>
+                            <color key="backgroundColor" red="0.1137254902" green="0.44705882349999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="yR6-U5-I79"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="确认"/>
+                            <connections>
+                                <action selector="okBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Rd-py-irb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="53" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLL-SA-I2O">
+                            <rect key="frame" x="218" y="85" width="42" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="jNL-az-iK5"/>
+                                <constraint firstAttribute="width" constant="42.5" id="pan-Zy-bxn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="20元" backgroundImage="room_btn_tip_ash.png">
+                                <color key="titleColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" title="20元" backgroundImage="room_btn_tip.png">
+                                <color key="titleColor" red="0.1137254902" green="0.44705882349999998" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="moneyBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Wcn-fY-wQK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="pZO-NI-GOM" firstAttribute="top" secondItem="Egk-IN-aJp" secondAttribute="top" constant="40" id="0lA-Tb-X1g"/>
+                        <constraint firstItem="1eC-Ev-4Mc" firstAttribute="top" secondItem="Egk-IN-aJp" secondAttribute="top" constant="10" id="0nh-Rk-tFA"/>
+                        <constraint firstItem="1eC-Ev-4Mc" firstAttribute="leading" secondItem="Egk-IN-aJp" secondAttribute="leading" id="4TF-eL-4Lt"/>
+                        <constraint firstItem="yQK-kr-rU2" firstAttribute="leading" secondItem="nc0-Gz-Vve" secondAttribute="trailing" constant="10" id="6Pa-fJ-MAa"/>
+                        <constraint firstAttribute="trailing" secondItem="pZO-NI-GOM" secondAttribute="trailing" constant="70" id="CWV-sh-yge"/>
+                        <constraint firstItem="fJz-X7-VN5" firstAttribute="leading" secondItem="Egk-IN-aJp" secondAttribute="leading" constant="65" id="JIw-7F-Zzo"/>
+                        <constraint firstAttribute="height" constant="185" id="JVK-Mj-qcQ"/>
+                        <constraint firstAttribute="trailing" secondItem="fJz-X7-VN5" secondAttribute="trailing" constant="65" id="MjE-hy-8w0"/>
+                        <constraint firstAttribute="trailing" secondItem="1eC-Ev-4Mc" secondAttribute="trailing" id="OIg-KI-hTJ"/>
+                        <constraint firstItem="Joe-PD-VKe" firstAttribute="leading" secondItem="Egk-IN-aJp" secondAttribute="leading" id="VdU-qs-aR5"/>
+                        <constraint firstItem="qI4-1G-D9J" firstAttribute="top" secondItem="Egk-IN-aJp" secondAttribute="top" constant="40" id="a08-Br-0sv"/>
+                        <constraint firstItem="Y2l-6f-KNL" firstAttribute="top" secondItem="fJz-X7-VN5" secondAttribute="bottom" constant="10" id="cwQ-jh-vJC"/>
+                        <constraint firstAttribute="trailing" secondItem="Joe-PD-VKe" secondAttribute="trailing" id="fyb-0I-nXP"/>
+                        <constraint firstItem="nc0-Gz-Vve" firstAttribute="leading" secondItem="qI4-1G-D9J" secondAttribute="leading" id="grW-AA-8Lc"/>
+                        <constraint firstItem="nc0-Gz-Vve" firstAttribute="top" secondItem="fJz-X7-VN5" secondAttribute="bottom" constant="10" id="joM-WI-bju"/>
+                        <constraint firstItem="yQK-kr-rU2" firstAttribute="top" secondItem="fJz-X7-VN5" secondAttribute="bottom" constant="10" id="k3E-Sv-zKd"/>
+                        <constraint firstItem="XLL-SA-I2O" firstAttribute="leading" secondItem="Y2l-6f-KNL" secondAttribute="trailing" constant="10" id="mB0-dU-iXt"/>
+                        <constraint firstItem="qI4-1G-D9J" firstAttribute="centerX" secondItem="Egk-IN-aJp" secondAttribute="centerX" id="pA9-P6-GEW"/>
+                        <constraint firstItem="XLL-SA-I2O" firstAttribute="top" secondItem="pZO-NI-GOM" secondAttribute="bottom" constant="10" id="qFU-dw-FzE"/>
+                        <constraint firstItem="fJz-X7-VN5" firstAttribute="top" secondItem="Egk-IN-aJp" secondAttribute="top" constant="40" id="wY4-Jx-0qB"/>
+                        <constraint firstAttribute="bottom" secondItem="Joe-PD-VKe" secondAttribute="bottom" id="xFo-dv-8WQ"/>
+                        <constraint firstItem="Y2l-6f-KNL" firstAttribute="leading" secondItem="yQK-kr-rU2" secondAttribute="trailing" constant="10" id="xjH-na-MtO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Egk-IN-aJp" secondAttribute="bottom" id="1S4-lt-Qf6"/>
+                <constraint firstItem="TWM-Vd-Zn1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4zH-T6-muO"/>
+                <constraint firstAttribute="trailing" secondItem="TWM-Vd-Zn1" secondAttribute="trailing" id="Qlw-aX-sEV"/>
+                <constraint firstAttribute="trailing" secondItem="Egk-IN-aJp" secondAttribute="trailing" id="e6a-6R-IxD"/>
+                <constraint firstItem="Egk-IN-aJp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="l8u-A5-Eh3"/>
+                <constraint firstItem="TWM-Vd-Zn1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ndx-je-CY7"/>
+                <constraint firstAttribute="bottom" secondItem="TWM-Vd-Zn1" secondAttribute="bottom" id="p2o-dT-vxb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="TWM-Vd-Zn1" id="2Fn-5d-Til"/>
+                <outlet property="contentView" destination="Egk-IN-aJp" id="gBu-CJ-hy6"/>
+                <outlet property="contentViewBottom" destination="1S4-lt-Qf6" id="Cvn-ye-Oft"/>
+                <outlet property="contentViewHeight" destination="JVK-Mj-qcQ" id="3su-gp-69Y"/>
+                <outlet property="moneyTextField" destination="fJz-X7-VN5" id="WaP-H7-V5T"/>
+                <outlet property="okBtn" destination="Joe-PD-VKe" id="GzH-tJ-2bl"/>
+                <outlet property="titleLabel" destination="1eC-Ev-4Mc" id="Wdg-LP-BaT"/>
+                <outlet property="unitLabel" destination="pZO-NI-GOM" id="sz0-04-OPR"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="room_bg_text_tip.png" width="200" height="35"/>
+        <image name="room_btn_tip.png" width="42" height="35"/>
+        <image name="room_btn_tip_ash.png" width="42" height="35"/>
+    </resources>
+</document>
